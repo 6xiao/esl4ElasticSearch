@@ -3,7 +3,7 @@ esl4ElasticSearch
 
 Eazy Search Language for Elastic Search
 
-为了能更简单的发挥Elastic Search的强大检索功能，我设计了一个新的语言（ESL）并用Go制作了解释器，但是公司整体上更希望有一套类SQL的语言来检索Elastic Search所以毙了它。但我认为属性检索这方面ESL更合适一些，所以开源以保留它的价值。
+为了能更简单的发挥Elastic Search的强大检索功能，我设计了一个属性检索语言（ESL）并用Go制作了解释器，但是公司整体上更希望有一套类SQL的语言来检索Elastic Search所以毙了它。但我认为属性检索这方面ESL更合适一些，所以开源以保留它的价值。
 
 ### 几个概念 ###
 
