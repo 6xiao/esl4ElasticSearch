@@ -81,6 +81,6 @@ func init() {
 
 func main() {
 	trpc := EasySearch.NewEsRpc(Search)
-	Common.ListenRpc(*flgRpc, trpc, nil)
+	Common.ListenRpc(*flgRpc, trpc)
 	log.Fatal("exit ...")
 }
