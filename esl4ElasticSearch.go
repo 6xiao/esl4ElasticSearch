@@ -92,7 +92,7 @@ func NewLex(code string) (*Lex, error) {
 			continue
 		}
 
-		return nil, errors.New(fmt.Sprint("have bad token:", lex.pos, string(lex.code[lex.pos:])))
+		return nil, errors.New(fmt.Sprint("have bad token:", lex.pos))
 	}
 
 	return lex, nil
