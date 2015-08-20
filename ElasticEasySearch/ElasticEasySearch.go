@@ -4,6 +4,7 @@ import (
 	"errors"
 	"flag"
 	"fmt"
+	"github.com/6xiao/esl4ElasticSearch"
 	"github.com/6xiao/esl4ElasticSearch/EasySearch"
 	"github.com/6xiao/go/Common"
 	es "github.com/mattbaird/elastigo/lib"
@@ -19,7 +20,7 @@ var (
 func Search(ess EasySearch.EasySearch, res *map[string][]byte) error {
 	defer Common.CheckPanic()
 
-	filter, err := ParseEsl(ess.ESL)
+	filter, err := esl4ElasticSearch.ParseEsl(ess.ESL)
 	if filter == nil || err != nil {
 		log.Println("error parse esl :", err, ess.ESL)
 		return err

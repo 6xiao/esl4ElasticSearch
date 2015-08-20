@@ -1,4 +1,4 @@
-package main
+package esl4ElasticSearch
 
 import (
 	"errors"
