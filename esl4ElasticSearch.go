@@ -376,7 +376,7 @@ func ParseExpress(lex *Lex) (interface{}, error) {
 	if op1.Type == NOT_T {
 		op2 := lex.Pop()
 		if op2 == nil || op2.Type != IN_T {
-			return nil, errors.New(id.Connect + " miss in OR container")
+			return nil, errors.New(id.Connect + " miss in container")
 		}
 	}
 
@@ -397,7 +397,7 @@ func ParseCond(lex *Lex) (interface{}, error) {
 		if tk := lex.Pop(); tk.Type == SEMI_T {
 			break
 		} else if tk.Type != OR_T {
-			return nil, errors.New(fmt.Sprint("invalidate operator", tk.Connect, `may be need ";" or "union"`))
+			return nil, errors.New(fmt.Sprint("invalidate operator", tk.Connect, `may be need ";" or "or"`))
 		}
 	}
 
